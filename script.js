@@ -1,16 +1,11 @@
-//show menu//
-const navMenu = document.getElementById('nav-menu'),
-    navActions = document.getElementById('nav-actions')
-    navClose = document.getElementById('nav-close')
+var mainListDiv = document.getElementById("mainListDiv"),
+    mediaButton = document.getElementById("mediaButton");
 
-if (navActions) {
-    navActions.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
-    })
-}
-
-if (navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
-    })
-}
+mediaButton.onclick = function () {
+    
+    "use strict";
+    
+    mainListDiv.classList.toggle("show_list");
+    mediaButton.classList.toggle("active");
+    
+};
