@@ -14,155 +14,289 @@
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <header id="header-place"></header>
   <body class="magicpattern">
     <section class="skills-1 sections">
+      <input
+        type="checkbox"
+        id="hide-checkbox"
+        onclick="toggleText('technical', 'soft')"
+      />
+      <label for="hide-checkbox" class="toggle">
+        <span class="toggle-button">
+          <span class="crater crater-1"></span>
+          <span class="crater crater-2"></span>
+          <span class="crater crater-3"></span>
+          <span class="crater crater-4"></span>
+          <span class="crater crater-5"></span>
+          <span class="crater crater-6"></span>
+          <span class="crater crater-7"></span>
+        </span>
+        <span class="star star-1"></span>
+        <span class="star star-2"></span>
+        <span class="star star-3"></span>
+        <span class="star star-4"></span>
+        <span class="star star-5"></span>
+        <span class="star star-6"></span>
+        <span class="star star-7"></span>
+        <span class="star star-8"></span>
+      </label>
       <h6 class="sub-heading" style="padding-left: 4vw">SKILLS</h6>
-      <div class="card-group group-1">
-        <article class="cards">
-          <p class="skills-word">HTML5</p>
-          <br />
-          <img src="pictures/html.png" alt="html" class="skill-pictures" />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="92"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 92%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">CSS</p>
-          <br />
-          <img src="pictures/css.png" alt="css" class="skill-pictures" />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">JavaScript</p>
-          <br />
-          <img
-            src="pictures/javascript.png"
-            alt="javascript"
-            class="skill-pictures"
-          />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 75%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">Java</p>
-          <br />
-          <img src="pictures/java.png" alt="java" class="skill-pictures" />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="80"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 80%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
+      <div id="technical">
+        <div class="card-group group-1">
+          <article class="cards">
+            <p class="skills-word">HTML5</p>
+            <br />
+            <img src="pictures/html.png" alt="html" class="skill-pictures" />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="92"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 92%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">CSS</p>
+            <br />
+            <img src="pictures/css.png" alt="css" class="skill-pictures" />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 90%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">JavaScript</p>
+            <br />
+            <img
+              src="pictures/javascript.png"
+              alt="javascript"
+              class="skill-pictures"
+            />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 75%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">Java</p>
+            <br />
+            <img src="pictures/java.png" alt="java" class="skill-pictures" />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 80%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+        </div>
+        <div class="card-group">
+          <article class="cards">
+            <p class="skills-word">Bootstrap</p>
+            <br />
+            <img
+              src="pictures/bootstrap.png"
+              alt="bootstrap"
+              class="skill-pictures"
+            />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 90%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">MySQL</p>
+            <br />
+            <img src="pictures/mysql.png" alt="mysql" class="skill-pictures" />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 88%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">Spring Framework</p>
+            <br />
+            <img
+              src="pictures/springboot.png"
+              alt="spring framework"
+              class="skill-pictures"
+            />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 70%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+          <article class="cards">
+            <p class="skills-word">Figma</p>
+            <br />
+            <img src="pictures/Figma.png" alt="figma" class="skill-pictures" />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width: 90%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+        </div>
+        <div class="card-group">
+          <article class="cards">
+            <p class="skills-word">React</p>
+            <br />
+            <img
+              src="pictures/react.png"
+              alt="bootstrap"
+              class="skill-pictures"
+            />
+            <br />
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="80"
+                style="width: 80%; background-color: rgba(134, 155, 181)"
+              ></div>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="card-group">
-        <article class="cards">
-          <p class="skills-word">Bootstrap</p>
-          <br />
-          <img
-            src="pictures/bootstrap.png"
-            alt="bootstrap"
-            class="skill-pictures"
-          />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">MySQL</p>
-          <br />
-          <img src="pictures/mysql.png" alt="mysql" class="skill-pictures" />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="88"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 88%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">Spring Framework</p>
-          <br />
-          <img
-            src="pictures/springboot.png"
-            alt="spring framework"
-            class="skill-pictures"
-          />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="70"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 70%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
-        <article class="cards">
-          <p class="skills-word">Figma</p>
-          <br />
-          <img src="pictures/Figma.png" alt="figma" class="skill-pictures" />
-          <br />
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-valuenow="90"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
-            ></div>
-          </div>
-        </article>
+
+      <div id="soft">
+        <div class="card-group group-1">
+          <article class="cards">
+            <p class="skills-word">Communication</p>
+            <br />
+            <img
+              src="pictures/communication.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Openness to Criticisms</p>
+            <br />
+            <img
+              src="pictures/criticisms.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Emotional Intelligence</p>
+            <br />
+            <img src="pictures/eq.png" alt="html" class="skill-pictures" />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Creativity</p>
+            <br />
+            <img
+              src="pictures/creativity.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+        </div>
+        <div class="card-group">
+          <article class="cards">
+            <p class="skills-word">Leadership</p>
+            <br />
+            <img
+              src="pictures/leadership.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Critical Thinking</p>
+            <br />
+            <img
+              src="pictures/critical.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Teamwork</p>
+            <br />
+            <img
+              src="pictures/teamwork.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+          <article class="cards">
+            <p class="skills-word">Attention to Detail</p>
+            <br />
+            <img
+              src="pictures/attention.png"
+              alt="html"
+              class="skill-pictures"
+            />
+            <br />
+          </article>
+        </div>
       </div>
+
+      <!-- mobile version below -->
 
       <div class="card-group-2 group-1">
         <article class="cards-2">
@@ -177,7 +311,7 @@
               aria-valuenow="92"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 92%; background-color: rgb(74, 68, 153)"
+              style="width: 92%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -193,7 +327,7 @@
               aria-valuenow="90"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
+              style="width: 90%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -213,7 +347,7 @@
               aria-valuenow="75"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 75%; background-color: rgb(74, 68, 153)"
+              style="width: 75%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -229,7 +363,7 @@
               aria-valuenow="75"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 75%; background-color: rgb(74, 68, 153)"
+              style="width: 75%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -251,7 +385,7 @@
               aria-valuenow="90"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
+              style="width: 90%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -267,7 +401,7 @@
               aria-valuenow="88"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 88%; background-color: rgb(74, 68, 153)"
+              style="width: 88%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -287,7 +421,7 @@
               aria-valuenow="70"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 70%; background-color: rgb(74, 68, 153)"
+              style="width: 70%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
@@ -303,7 +437,7 @@
               aria-valuenow="90"
               aria-valuemin="0"
               aria-valuemax="100"
-              style="width: 90%; background-color: rgb(74, 68, 153)"
+              style="width: 90%; background-color: rgba(134, 155, 181)"
             ></div>
           </div>
         </article>
