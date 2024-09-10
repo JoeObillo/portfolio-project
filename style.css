@@ -867,6 +867,7 @@ a :active {
 .project-pictures {
   width: 33.5vw;
   padding-top: 2vw;
+  border-radius: var(--radius-3);
 }
 
 .scrollport {
