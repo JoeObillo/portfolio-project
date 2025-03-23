@@ -569,7 +569,7 @@ a :active {
 /*PROJECTS*/
 
 .projects {
-  padding-left: 10vw;
+  padding-left: 2vw;
   padding-top: 8vw;
   padding-right: 2vw;
 }
@@ -588,8 +588,6 @@ a :active {
 }
 
 .scrollport {
-  -webkit-mask-image: linear-gradient(to right, #86bfd6, #86bfd6, #000, #0000);
-
   overflow-x: scroll;
   overscroll-behavior-x: contain;
 
@@ -925,7 +923,7 @@ a :active {
   }
 
   .project-words {
-    font-size: 0.6rem;
+    font-size: 1rem;
     margin-top: 2vw;
     padding-left: 1.2vw;
     padding-right: 1.2vw;
@@ -933,12 +931,12 @@ a :active {
   }
 
   .project-pictures {
-    width: 45rem;
+    width: 50rem;
   }
 
   .scrollport > div {
     block-size: 85vw;
-    height: 15rem;
+    height: 20rem;
     aspect-ratio: var(--ratio-square);
     border-radius: var(--radius-3);
     box-shadow: var(--shadow-4);
